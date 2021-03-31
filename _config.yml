@@ -7,9 +7,10 @@ exclude:
     - Gemfile.lock
 
 # Installed gems
-plugins: 
-    - jekyll-target-blank
-    - jekyll-redirect-from
+#plugins: 
+ 
+# - jekyll-target-blank
+#   - jekyll-redirect-from
 
 # Gem settings
 
