@@ -1,68 +1,38 @@
-# Exclude files from Jekyll build
+
 exclude:
-    - README.md
-    - LICENSE
-    - CNAME
-    - Gemfile
-    - Gemfile.lock
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
 
-# Installed gems
-#plugins: 
- 
-# - jekyll-target-blank
-#   - jekyll-redirect-from
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
 
-# Gem settings
 
 # Site settings
-encoding: utf-8
-lang: en-GB
 title: "Whsun Group"
-logo: "/assets/logo.png"
-description: ""
+subtitle: "Predicting synthesis and synthesizbility"
+url: "http://whsunlab.github.io" # the base hostname & protocol for your site
+# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+# baseurl: "/airspace-jekyll"
 baseurl: ""
-url: "http://whsunlab.github.io"
-repo: "https://github.com/ourcodingclub/ourcodingclub.github.io"
-email: ""
-google_analytics: UA-92956541-1
-css_inline: false 
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
+
+# Build settings
 markdown: kramdown
-highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
-  input: GFM
-  auto_ids: true 
 
-# Favicons 
+# Google analytics
+# ga_tracking_id: "UA-XXXX-1"
 
-# Site navigation
-navigation_header:
-- title: Home
-  url: /
-- title: Tutorials
-  url: /tutorials.html
-- title: Course
-  url: /course.html
-- title: Team
-  url: /team.html
-- title: Get involved
-  url: /involve.html
-- title: Links
-  url: /links.html
-- title: Contact
-  url: /contact.html
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."
 
-# Define collections
-collections:
-    tutorials:
-        output: true
-        permalink: /tutorials/:path/
-    course:
-        output: true
-        permalink: /course/:path/
-    DL:
-        output: true
-        permalink: /DL/:path/
-    posts:
-        output: true
-        permalink: /posts/:path/
+  - cat: dummy
+    desc: "Just some placeholder posts, lorem ipsum and the rest."

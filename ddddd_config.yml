@@ -1,0 +1,68 @@
+# Exclude files from Jekyll build
+exclude:
+    - README.md
+    - LICENSE
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+
+# Installed gems
+#plugins: 
+ 
+# - jekyll-target-blank
+#   - jekyll-redirect-from
+
+# Gem settings
+
+# Site settings
+encoding: utf-8
+lang: en-GB
+title: "Whsun Group"
+logo: "/assets/logo.png"
+description: ""
+baseurl: ""
+url: "http://whsunlab.github.io"
+repo: "https://github.com/ourcodingclub/ourcodingclub.github.io"
+email: ""
+google_analytics: UA-92956541-1
+css_inline: false 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids: true 
+
+# Favicons 
+
+# Site navigation
+navigation_header:
+- title: Home
+  url: /
+- title: Tutorials
+  url: /tutorials.html
+- title: Course
+  url: /course.html
+- title: Team
+  url: /team.html
+- title: Get involved
+  url: /involve.html
+- title: Links
+  url: /links.html
+- title: Contact
+  url: /contact.html
+
+# Define collections
+collections:
+    tutorials:
+        output: true
+        permalink: /tutorials/:path/
+    course:
+        output: true
+        permalink: /course/:path/
+    DL:
+        output: true
+        permalink: /DL/:path/
+    posts:
+        output: true
+        permalink: /posts/:path/
