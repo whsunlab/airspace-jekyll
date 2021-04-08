@@ -9,14 +9,27 @@ permalink: /pub/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Get the latest on what we're doing</h1>
+          <h1>PUBLICATION</h1>
           <p>Catch up with us, anytime and anywhere</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-{% for post in site.posts %}
+<!-- Wrapper Start -->
+<section id="pub">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <a name="About us" class="anchor"></a>
+        <h2>About us</h2>
+        <p>Our group is interested in resolving outstanding fundamental scientific problems that impede the computational materials design process. Our research involves using high-throughput density functional theory, applied thermodynamics, and materials informatics to deepen our fundamental understanding of nucleation and growth, while exploring new chemical spaces for functional technological materials.</p>
+        <p>Our primary research focus is on developing new quantitative and predictive theories of inorganic materials synthesis. This effort was born out of a realization that the computational materials discovery pipeline is no longer bottlenecked by the identification of promising new materials, but rather, by the difficulty of synthesizing predicted compounds in the laboratory. The ability to predict how materials form, and under which conditions, is the final step required to ‘close-the-loop’ in the computational materials discovery and design process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- {% for post in site.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
   <p class="post-date">{{ post.date | date_to_long_string }}</p>
@@ -24,4 +37,4 @@ permalink: /pub/
     {{ post.content | strip_html | truncatewords: 50 }}
   </p>
 </div>
-{% endfor %}
+{% endfor %} -->
